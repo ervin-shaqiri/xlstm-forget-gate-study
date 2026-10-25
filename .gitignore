@@ -1,0 +1,26 @@
+# AI/IDE metadata
+.gemini/
+
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/.venv/
+**/.pytest_cache/
+**/.coverage
+**/.mypy_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Note: Models, images, and logs are intentionally tracked 
+# so results are immediately available for review.
+
+
+/latex_report
+
+.vscode
+
+
+Delétang et al. (2022:2023), "Neural Networks and the Chomsky Hierarchy"

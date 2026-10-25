@@ -1,0 +1,22 @@
+=========================================================================================
+ COMPARATIVE SYSTEM RESOURCES: CUSTOM CYCLE NAVIGATION (DECOUPLED STABILIZER m_t = 0)
+=========================================================================================
+Metric                               |  Forget Gate Enabled | Forget Gate Disabled | Delta / Speedup
+---------------------------------------------------------------------------------------------------
+Active Forward Parameters            |               59,584 |               51,328 |         -13.86%
+Forget Gate Parameters (W_f,R_f,b_f) |                8,256 |                    0 |        -100.00%
+Mean Epoch Time (s)                  |              27.2517 |              27.0408 |           1.01x
+Min Epoch Time (s)                   |              26.8983 |              26.8813 |          -0.77%
+Total Training Time (s)              |              4087.76 |              4056.12 |         -31.64s
+Training Throughput (samples/s)      |               3669.5 |               3698.1 |           1.01x
+Peak Process RSS Memory (MB)         |               493.44 |               526.55 |        +33.11MB
+Mean Cell State Norm ||c_t||_2       |              37.8352 |             440.9313 |             ---
+Max Normalizer State n_t             |              70.6184 |             945.8633 |             ---
+---------------------------------------------------------------------------------------------------
+Inference Per-Sample Latency (ms):
+  Sequence Length L=20               |               0.0498 |               0.0538 |           0.93x
+  Sequence Length L=40               |               0.0873 |               0.0955 |           0.91x
+  Sequence Length L=80               |               0.1662 |               0.1770 |           0.94x
+  Sequence Length L=120              |               0.2531 |               0.2626 |           0.96x
+  Sequence Length L=256              |               0.5182 |               0.5605 |           0.92x
+=========================================================================================

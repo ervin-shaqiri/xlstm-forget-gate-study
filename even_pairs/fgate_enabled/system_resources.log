@@ -1,0 +1,42 @@
+==========================================================================
+ SYSTEM RESOURCES & EFFICIENCY REPORT: EVEN_PAIRS (FGATE_ENABLED)
+==========================================================================
+Timestamp:            2026-10-25T15:34:21
+Compute Device:       mps (Darwin 25.6.0 (arm64))
+PyTorch Version:      2.9.0
+Stabilizer Mode:      decoupled (m_t = 0)
+Forget Gate Mode:     enabled (sigmoid(f_raw))
+
+--- 1. Model Parameter Breakdown ---
+Total Allocated Params:   58,560
+Forget Gate Params:       8,256 (W_f, R_f, b_f)
+Active Forward Params:    58,560
+Active Param Reduction:   0.00%
+
+--- 2. Training Time & Throughput ---
+Total Epochs:             100
+Total Training Time:      107.10 s (1.78 min)
+Average Epoch Time:       1.0710 s
+Min / Max Epoch Time:     1.0710 s / 1.0710 s
+Epoch Time Std Dev:       0.0000 s
+Training Throughput:      3734.8 samples/s (149393.1 tokens/s)
+
+--- 3. Memory Usage ---
+Model Weights Footprint:  0.2234 MB
+Peak Process RSS Memory:  636.22 MB
+Device Allocated Memory:  39.16 MB
+Device Driver Memory:     2226.12 MB
+
+--- 4. Internal State Stability ---
+Mean Cell State ||c_t||2: 6.6922
+Max Normalizer n_t:       6.4423
+
+--- 5. Inference Latency & Throughput Benchmark (Batch=64) ---
+ Seq Len |   Batch Latency (ms) |   Per-Sample (ms) |   Throughput (tok/s)
+--------------------------------------------------------------------------
+      20 |                3.191 |            0.0499 |             401111.4
+      40 |                5.510 |            0.0861 |             464641.4
+      80 |               11.220 |            0.1753 |             456344.9
+     120 |               15.998 |            0.2500 |             480060.3
+     256 |               32.850 |            0.5133 |             498753.4
+==========================================================================

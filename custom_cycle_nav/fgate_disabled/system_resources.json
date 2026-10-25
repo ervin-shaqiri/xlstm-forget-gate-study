@@ -1,0 +1,74 @@
+{
+  "task": "custom_cycle_nav",
+  "variant": "fgate_disabled",
+  "stabilizer_mode": "decoupled (m_t = 0)",
+  "forget_gate_mode": "disabled (f_t = 1.0)",
+  "timestamp": "2026-10-25T15:48:23",
+  "device": "mps",
+  "platform": "Darwin 25.6.0 (arm64)",
+  "pytorch_version": "2.9.0",
+  "parameters": {
+    "total_params": 59584,
+    "fgate_params": 8256,
+    "active_params": 51328,
+    "active_param_reduction_pct": 13.86
+  },
+  "training_timing": {
+    "epochs": 150,
+    "total_training_time_sec": 4056.12,
+    "total_training_time_min": 67.6,
+    "mean_epoch_time_sec": 27.0408,
+    "min_epoch_time_sec": 26.8813,
+    "max_epoch_time_sec": 27.4628,
+    "std_epoch_time_sec": 0.117,
+    "samples_per_sec": 3698.1,
+    "tokens_per_sec": 295849.0
+  },
+  "memory_usage": {
+    "model_footprint_mb": 0.2273,
+    "peak_process_rss_mb": 526.55,
+    "device_allocated_mb": 79.72,
+    "device_driver_allocated_mb": 1199.34
+  },
+  "state_norms": {
+    "mean_cell_state_l2_norm": 440.9313,
+    "max_normalizer_state": 945.8633
+  },
+  "inference_benchmark": {
+    "L=20": {
+      "seq_len": 20,
+      "batch_size": 64,
+      "mean_batch_latency_ms": 3.443,
+      "per_sample_latency_ms": 0.0538,
+      "throughput_tokens_per_sec": 371744.1
+    },
+    "L=40": {
+      "seq_len": 40,
+      "batch_size": 64,
+      "mean_batch_latency_ms": 6.113,
+      "per_sample_latency_ms": 0.0955,
+      "throughput_tokens_per_sec": 418800.8
+    },
+    "L=80": {
+      "seq_len": 80,
+      "batch_size": 64,
+      "mean_batch_latency_ms": 11.331,
+      "per_sample_latency_ms": 0.177,
+      "throughput_tokens_per_sec": 451861.7
+    },
+    "L=120": {
+      "seq_len": 120,
+      "batch_size": 64,
+      "mean_batch_latency_ms": 16.805,
+      "per_sample_latency_ms": 0.2626,
+      "throughput_tokens_per_sec": 457005.7
+    },
+    "L=256": {
+      "seq_len": 256,
+      "batch_size": 64,
+      "mean_batch_latency_ms": 35.871,
+      "per_sample_latency_ms": 0.5605,
+      "throughput_tokens_per_sec": 456749.3
+    }
+  }
+}

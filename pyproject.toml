@@ -1,0 +1,37 @@
+[project]
+name = "xlstm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.11.*"
+
+dependencies = [
+    "comet-ml>=3.54.0",
+    "dacite>=1.9.2",
+    "datasets>=4.3.0",
+    "flax>=0.12.0",
+    "grain-nightly>=0.2.14.dev20251027",
+    "jax>=0.6.2",
+    "jax-metal>=0.1.1",
+    "manim>=0.21.0",
+    "mlstm-kernels>=2.0.1",
+    "numpy>=1.26.0",
+    "pandas>=2.3.3",
+    "requests>=2.32.5",
+    "seaborn>=0.13.2",
+    "tabulate>=0.9.0",
+    "tensorflow>=2.20.0",
+    "torch>=2.9.0",
+    "transformers>=4.57.1",
+    "wandb>=0.22.3",
+    "warcio>=1.7.5",
+    "zstandard>=0.25.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "Chomsky_sLSTM_Isolated",
+    "Chomsky_mLSTM_Isolated",
+    "MQAR_mLSTM_Isolated",
+    "MQAR_sLSTM_Isolated",
+]

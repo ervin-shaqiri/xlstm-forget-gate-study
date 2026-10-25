@@ -1,0 +1,22 @@
+=========================================================================================
+ COMPARATIVE SYSTEM RESOURCES: EVEN PAIRS (DECOUPLED STABILIZER m_t = 0)
+=========================================================================================
+Metric                               |  Forget Gate Enabled | Forget Gate Disabled | Delta / Speedup
+---------------------------------------------------------------------------------------------------
+Active Forward Parameters            |               58,560 |               50,304 |         -14.10%
+Forget Gate Parameters (W_f,R_f,b_f) |                8,256 |                    0 |        -100.00%
+Mean Epoch Time (s)                  |               1.0710 |               1.0450 |           1.02x
+Min Epoch Time (s)                   |               1.0710 |               1.0450 |          -2.43%
+Total Training Time (s)              |               107.10 |               104.50 |          -2.60s
+Training Throughput (samples/s)      |               3734.8 |               3827.8 |           1.02x
+Peak Process RSS Memory (MB)         |               636.22 |               636.22 |         +0.00MB
+Mean Cell State Norm ||c_t||_2       |               6.6922 |              76.4307 |             ---
+Max Normalizer State n_t             |               6.4423 |             134.9659 |             ---
+---------------------------------------------------------------------------------------------------
+Inference Per-Sample Latency (ms):
+  Sequence Length L=20               |               0.0499 |               0.0555 |           0.90x
+  Sequence Length L=40               |               0.0861 |               0.0968 |           0.89x
+  Sequence Length L=80               |               0.1753 |               0.1777 |           0.99x
+  Sequence Length L=120              |               0.2500 |               0.2630 |           0.95x
+  Sequence Length L=256              |               0.5133 |               0.6022 |           0.85x
+=========================================================================================

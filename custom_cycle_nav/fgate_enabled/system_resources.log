@@ -1,0 +1,42 @@
+==========================================================================
+ SYSTEM RESOURCES & EFFICIENCY REPORT: CUSTOM_CYCLE_NAV (FGATE_ENABLED)
+==========================================================================
+Timestamp:            2026-10-25T15:48:21
+Compute Device:       mps (Darwin 25.6.0 (arm64))
+PyTorch Version:      2.9.0
+Stabilizer Mode:      decoupled (m_t = 0)
+Forget Gate Mode:     enabled (sigmoid(f_raw))
+
+--- 1. Model Parameter Breakdown ---
+Total Allocated Params:   59,584
+Forget Gate Params:       8,256 (W_f, R_f, b_f)
+Active Forward Params:    59,584
+Active Param Reduction:   0.00%
+
+--- 2. Training Time & Throughput ---
+Total Epochs:             150
+Total Training Time:      4087.76 s (68.13 min)
+Average Epoch Time:       27.2517 s
+Min / Max Epoch Time:     26.8983 s / 31.3048 s
+Epoch Time Std Dev:       0.4956 s
+Training Throughput:      3669.5 samples/s (293559.6 tokens/s)
+
+--- 3. Memory Usage ---
+Model Weights Footprint:  0.2273 MB
+Peak Process RSS Memory:  493.44 MB
+Device Allocated Memory:  39.41 MB
+Device Driver Memory:     1199.34 MB
+
+--- 4. Internal State Stability ---
+Mean Cell State ||c_t||2: 37.8352
+Max Normalizer n_t:       70.6184
+
+--- 5. Inference Latency & Throughput Benchmark (Batch=64) ---
+ Seq Len |   Batch Latency (ms) |   Per-Sample (ms) |   Throughput (tok/s)
+--------------------------------------------------------------------------
+      20 |                3.186 |            0.0498 |             401756.6
+      40 |                5.589 |            0.0873 |             458083.2
+      80 |               10.640 |            0.1662 |             481214.9
+     120 |               16.200 |            0.2531 |             474084.9
+     256 |               33.167 |            0.5182 |             493978.1
+==========================================================================
